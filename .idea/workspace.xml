@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a458d37d-017e-4658-b732-73db792b1705" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bad-wolf-launcher-temp.iml" afterPath="$PROJECT_DIR$/bad-wolf-launcher.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/avatar1.png" afterPath="$PROJECT_DIR$/resources/avatars/avatar1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/avatar2.png" afterPath="$PROJECT_DIR$/resources/avatars/avatar2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/avatar3.png" afterPath="$PROJECT_DIR$/resources/avatars/avatar3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/avatar4.png" afterPath="$PROJECT_DIR$/resources/avatars/avatar4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/avatar5.png" afterPath="$PROJECT_DIR$/resources/avatars/avatar5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java" afterPath="$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TitleScreen/titleScreen.fxml" afterPath="$PROJECT_DIR$/src/TitleScreen/titleScreen.fxml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +18,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1510974208918" expanded="true" signature="1686:1779" ph="..." />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -37,8 +31,8 @@
       <file leaf-file-name="TitleScreenController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="198">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -264,12 +258,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510970528398</updated>
-      <workItem from="1510970529628" duration="1696000" />
+      <workItem from="1510970529628" duration="3418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1696000" />
+    <option name="totallyTimeSpent" value="3418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1067" height="939" extended-state="0" />
@@ -319,7 +313,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510974208918" expanded="true" signature="1686:1779" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -341,8 +337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding />
         </state>
       </provider>
