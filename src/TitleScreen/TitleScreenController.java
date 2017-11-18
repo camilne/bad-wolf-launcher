@@ -69,7 +69,7 @@ public class TitleScreenController implements Initializable{
         {
             StringBuilder builder = new StringBuilder(
                     "java -jar bad-wolf.jar");
-            System.out.println(listOfFiles[index].toString());
+            System.out.println(builder.toString() + " " + listOfFiles[index].toString());
             Runtime.getRuntime().exec(builder.toString() + " " + listOfFiles[index].toString());
             System.exit(0);
         } catch (Exception e)
