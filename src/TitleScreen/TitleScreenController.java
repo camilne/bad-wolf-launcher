@@ -6,6 +6,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 
 import java.awt.*;
 import java.io.File;
@@ -25,6 +28,11 @@ public class TitleScreenController implements Initializable{
     private ImageView imageViewer;
     @FXML
     ComboBox<String> screenSizeOptions;
+
+    private File video = new File("story.mp4");
+
+    @FXML
+    private MediaView videoPlayer = new MediaView(new MediaPlayer(new Media(video.toURI().toString())));
 
     private File[] listOfFiles;
     private ArrayList<Image> avatars = new ArrayList<>();
@@ -71,23 +79,37 @@ public class TitleScreenController implements Initializable{
     }
 
     @FXML
-    public void launchGame(){
-        try
-        {
-            StringBuilder builder = new StringBuilder(
-                    "java -jar bad-wolf.jar");
-            StringBuilder size = new StringBuilder();
-            if (screenSizeOptions.getValue().equals("Full Screen")) {
-                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-                size.append((int)screenSize.getWidth() + " " + (int)screenSize.getHeight() + " " + "false");
-            } else  {
-                size.append("1280 720 false");
-            }
-            Runtime.getRuntime().exec(builder.toString() + " " + listOfFiles[index].toString() + " " + size);
-            System.exit(0);
-        } catch (Exception e)
-        {
-            e.printStackTrace();
+    public void launchGame() {
+        System.out.println("launching");
+        System.out.println(video.toURI().toString());
+
+        videoPlayer.getMediaPlayer().setOnReady(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("running video");
+                videoPlayer.getMediaPlayer().play();
         }
+        });
+        videoPlayer.getMediaPlayer().setOnEndOfMedia(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("video finished");
+                try {
+                    StringBuilder builder = new StringBuilder(
+                            "java -jar bad-wolf.jar");
+                    StringBuilder size = new StringBuilder();
+                    if (screenSizeOptions.getValue().equals("Full Screen")) {
+                        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                        size.append((int) screenSize.getWidth() + " " + (int) screenSize.getHeight() + " " + "false");
+                    } else {
+                        size.append("1280 720 false");
+                    }
+                    Runtime.getRuntime().exec(builder.toString() + " " + listOfFiles[index].toString() + " " + size);
+                    System.exit(0);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 }
