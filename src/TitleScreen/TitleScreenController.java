@@ -4,20 +4,25 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.Screen;
+import javafx.stage.Stage;
 
 import java.awt.*;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -91,21 +96,29 @@ public class TitleScreenController implements Initializable{
 
     @FXML
     public void launchGame() {
-        vbox.getChildren().clear();
-        videoPlayer.setVisible(true);
+        TitleScreen.primaryStage.close();
+
+        Stage stage = new Stage();
         if (screenSizeOptions.getValue().equals("Full Screen")) {
             Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
-            videoPlayer.setFitHeight(screenSize.getHeight() - 50);
-            TitleScreen.primaryStage.setHeight(screenSize.getHeight());
-            TitleScreen.primaryStage.setWidth(videoPlayer.getMediaPlayer().getMedia().getWidth() - 90);
+            showIntro(stage, (int)screenSize.getWidth(), (int)screenSize.getHeight());
         } else {
-            videoPlayer.setFitHeight(720 - 50);
-            TitleScreen.primaryStage.setHeight(720);
-            TitleScreen.primaryStage.setWidth(980);
+            showIntro(stage, 1280, 720);
         }
-        TitleScreen.primaryStage.centerOnScreen();
-        videoPlayer.getMediaPlayer().play();
-        videoPlayer.getMediaPlayer().setOnEndOfMedia(new Runnable() {
+    }
+
+    private void showIntro(Stage stage, int width, int height) {
+        MediaView mediaView = new MediaView();
+        Media media = new Media(new File("story.mp4").toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaView.setMediaPlayer(mediaPlayer);
+        mediaPlayer.setAutoPlay(true);
+        mediaView.setPreserveRatio(false);
+
+        mediaView.setFitWidth(width);
+        mediaView.setFitHeight(height);
+
+        mediaPlayer.setOnEndOfMedia(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -113,17 +126,20 @@ public class TitleScreenController implements Initializable{
                             "java -jar bad-wolf.jar");
                     StringBuilder size = new StringBuilder();
                     if (screenSizeOptions.getValue().equals("Full Screen")) {
-                        Rectangle screenSize = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds();
+                        Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
                         size.append((int) screenSize.getWidth() + " " + (int) screenSize.getHeight() + " " + "false");
                     } else {
                         size.append("1280 720 false");
                     }
                     Runtime.getRuntime().exec(builder.toString() + " " + listOfFiles[index].toString() + " " + size);
-                    System.exit(0);
+                    stage.close();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         });
+
+        stage.setScene(new Scene(new FlowPane(mediaView)));
+        stage.show();
     }
 }
