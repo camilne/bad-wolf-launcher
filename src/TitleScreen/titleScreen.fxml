@@ -25,7 +25,7 @@
                   <Button mnemonicParsing="false" onAction="#cycleCharRight" style="-fx-background-color: #9DA9A0;" text="&gt;" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" style="-fx-background-color: #9DA9A0;" text="Play" />
+            <Button mnemonicParsing="false" onAction="#launchGame" style="-fx-background-color: #9DA9A0;" text="Play" />
          </children>
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />

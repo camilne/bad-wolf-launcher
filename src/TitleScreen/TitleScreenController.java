@@ -21,13 +21,14 @@ public class TitleScreenController implements Initializable{
     @FXML
     private ImageView imageViewer;
 
+    private File[] listOfFiles;
     private ArrayList<Image> avatars = new ArrayList<>();
     private int index = 0;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         File folder = new File("resources/avatars");
-        File[] listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
+        listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
 
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
@@ -58,5 +59,20 @@ public class TitleScreenController implements Initializable{
             index = avatars.size() - 1;
         }
         imageViewer.setImage(avatars.get(index));
+    }
+
+    @FXML
+    public void launchGame(){
+        try
+        {
+            StringBuilder builder = new StringBuilder(
+                    "java -jar ../bad-wolf/desktop/build/libs/desktop-1.0.jar");
+//            builder.append(" " + index);
+        System.out.println("Here!");
+            Runtime.getRuntime().exec(builder.toString());
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }
