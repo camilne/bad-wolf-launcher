@@ -20,12 +20,18 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="titleScreen.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TitleScreen/titleScreen.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="titleScreen.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/titleScreen.fxml">
+>>>>>>> Stashed changes
 =======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="titleScreen.fxml" pinned="false" current-in-tab="false">
@@ -45,8 +51,13 @@
         <entry file="file://$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <state relative-caret-position="950">
               <caret line="70" column="36" lean-forward="true" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+=======
+            <state relative-caret-position="336">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+>>>>>>> Stashed changes
 =======
             <state relative-caret-position="336">
               <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
@@ -60,8 +71,13 @@
         <entry file="file://$PROJECT_DIR$/src/TitleScreen/TitleScreen.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <state relative-caret-position="400">
               <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+=======
+            <state relative-caret-position="294">
+              <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+>>>>>>> Stashed changes
 =======
             <state relative-caret-position="294">
               <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
@@ -96,11 +112,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds">
     <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1030" />
 =======
+=======
+>>>>>>> Stashed changes
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1067" />
@@ -123,9 +142,12 @@
     </navigator>
     <panes>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
       <pane id="ProjectPane">
@@ -295,7 +317,11 @@
       <updated>1510970528398</updated>
       <workItem from="1510970529628" duration="1696000" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <workItem from="1510977019670" duration="2264000" />
+=======
+      <workItem from="1510986245713" duration="532000" />
+>>>>>>> Stashed changes
 =======
       <workItem from="1510986245713" duration="532000" />
 >>>>>>> Stashed changes
@@ -303,6 +329,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="3960000" />
   </component>
@@ -312,6 +339,11 @@
     <option name="totallyTimeSpent" value="2228000" />
   </component>
   <component name="ToolWindowManager">
+=======
+    <option name="totallyTimeSpent" value="2228000" />
+  </component>
+  <component name="ToolWindowManager">
+>>>>>>> Stashed changes
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
 >>>>>>> Stashed changes
@@ -325,7 +357,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> Stashed changes
@@ -334,7 +370,11 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09572072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Stashed changes
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> Stashed changes
@@ -365,11 +405,14 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/TitleScreen/titleScreen.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
 =======
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/resources/titleScreen.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -398,6 +441,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/titleScreen.fxml">
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -445,8 +491,13 @@
     <entry file="file://$PROJECT_DIR$/src/TitleScreen/TitleScreen.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <state relative-caret-position="400">
           <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+=======
+        <state relative-caret-position="294">
+          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+>>>>>>> Stashed changes
 =======
         <state relative-caret-position="294">
           <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
@@ -458,8 +509,13 @@
     <entry file="file://$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <state relative-caret-position="950">
           <caret line="70" column="36" lean-forward="true" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+=======
+        <state relative-caret-position="336">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+>>>>>>> Stashed changes
 =======
         <state relative-caret-position="336">
           <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />

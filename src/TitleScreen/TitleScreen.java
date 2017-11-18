@@ -17,7 +17,6 @@ import java.io.File;
  */
 public class TitleScreen extends Application {
     public void start(Stage primaryStage) throws Exception {
-        System.out.println(new File(".").getAbsolutePath());
         Parent menu = FXMLLoader.load(new File("./titleScreen.fxml").toURI().toURL());
         primaryStage.setScene(new Scene(menu));
         primaryStage.show();
