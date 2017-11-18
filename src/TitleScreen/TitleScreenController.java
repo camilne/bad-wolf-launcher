@@ -3,6 +3,7 @@ package TitleScreen;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -11,6 +12,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.stage.Screen;
 
 import java.awt.*;
 import java.io.File;
@@ -44,8 +46,11 @@ public class TitleScreenController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        videoPlayer.setMediaPlayer(new MediaPlayer(new Media(video.toURI().toString())));
+        Media media = new Media(video.toURI().toString());
+        videoPlayer.setMediaPlayer(new MediaPlayer(media));
+        videoPlayer.fitWidthProperty().bind(media.widthProperty());
         videoPlayer.setVisible(false);
+
         screenSizeOptions.setItems(FXCollections.observableArrayList("Full Screen", "Medium"));
         screenSizeOptions.getSelectionModel().selectFirst();
         File folder = new File("avatars");
@@ -88,8 +93,17 @@ public class TitleScreenController implements Initializable{
     public void launchGame() {
         vbox.getChildren().clear();
         videoPlayer.setVisible(true);
-        videoPlayer.setY(50);
-        videoPlayer.setPreserveRatio(true);
+        if (screenSizeOptions.getValue().equals("Full Screen")) {
+            Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
+            videoPlayer.setFitHeight(screenSize.getHeight() - 50);
+            TitleScreen.primaryStage.setHeight(screenSize.getHeight());
+            TitleScreen.primaryStage.setWidth(videoPlayer.getMediaPlayer().getMedia().getWidth() - 90);
+        } else {
+            videoPlayer.setFitHeight(720 - 50);
+            TitleScreen.primaryStage.setHeight(720);
+            TitleScreen.primaryStage.setWidth(980);
+        }
+        TitleScreen.primaryStage.centerOnScreen();
         videoPlayer.getMediaPlayer().play();
         videoPlayer.getMediaPlayer().setOnEndOfMedia(new Runnable() {
             @Override
@@ -99,7 +113,7 @@ public class TitleScreenController implements Initializable{
                             "java -jar bad-wolf.jar");
                     StringBuilder size = new StringBuilder();
                     if (screenSizeOptions.getValue().equals("Full Screen")) {
-                        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                        Rectangle screenSize = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds();
                         size.append((int) screenSize.getWidth() + " " + (int) screenSize.getHeight() + " " + "false");
                     } else {
                         size.append("1280 720 false");

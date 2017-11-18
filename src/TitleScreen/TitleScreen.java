@@ -16,7 +16,11 @@ import java.io.File;
  * @version 1.0.0
  */
 public class TitleScreen extends Application {
+    public static Stage primaryStage;
+
     public void start(Stage primaryStage) throws Exception {
+        TitleScreen.primaryStage = primaryStage;
+
         Parent menu = FXMLLoader.load(new File("./titleScreen.fxml").toURI().toURL());
         primaryStage.setScene(new Scene(menu));
         primaryStage.show();
