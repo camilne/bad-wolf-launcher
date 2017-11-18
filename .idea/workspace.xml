@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b17915c7-6b0a-4508-bcfc-43ac8eed4040" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/titleScreen.fxml" afterPath="$PROJECT_DIR$/resources/titleScreen.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java" afterPath="$PROJECT_DIR$/src/TitleScreen/TitleScreenController.java" />
-    </list>
+    <list default="true" id="b17915c7-6b0a-4508-bcfc-43ac8eed4040" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +75,9 @@
             <state relative-caret-position="358">
               <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
-                <marker date="1510987732668" expanded="true" signature="23860:23878" ph="..." />
-                <marker date="1510987732668" expanded="true" signature="23860:23891" ph="..." />
-                <marker date="1510987732668" expanded="true" signature="23860:23906" ph="..." />
+                <marker date="1510987734003" expanded="true" signature="23860:23878" ph="..." />
+                <marker date="1510987734003" expanded="true" signature="23860:23891" ph="..." />
+                <marker date="1510987734003" expanded="true" signature="23860:23906" ph="..." />
               </folding>
 >>>>>>> master
             </state>
@@ -90,6 +87,7 @@
       <file leaf-file-name="titleScreen.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/titleScreen.fxml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -107,6 +105,10 @@
             <state relative-caret-position="216">
               <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
 >>>>>>> master
+=======
+            <state relative-caret-position="291">
+              <caret line="24" column="112" lean-forward="true" selection-start-line="24" selection-start-column="112" selection-end-line="24" selection-end-column="112" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -355,12 +357,17 @@
 >>>>>>> Stashed changes
 =======
       <workItem from="1510970529628" duration="3460000" />
+<<<<<<< Updated upstream
       <workItem from="1510987394109" duration="299000" />
 >>>>>>> master
+=======
+      <workItem from="1510987394109" duration="341000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -380,6 +387,9 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
 =======
     <option name="totallyTimeSpent" value="3759000" />
+=======
+    <option name="totallyTimeSpent" value="3801000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1067" height="939" extended-state="0" />
@@ -394,6 +404,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -407,6 +418,9 @@
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> master
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -563,9 +577,9 @@
         <state relative-caret-position="358">
           <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
-            <marker date="1510987732668" expanded="true" signature="23860:23878" ph="..." />
-            <marker date="1510987732668" expanded="true" signature="23860:23891" ph="..." />
-            <marker date="1510987732668" expanded="true" signature="23860:23906" ph="..." />
+            <marker date="1510987734003" expanded="true" signature="23860:23878" ph="..." />
+            <marker date="1510987734003" expanded="true" signature="23860:23891" ph="..." />
+            <marker date="1510987734003" expanded="true" signature="23860:23906" ph="..." />
           </folding>
 >>>>>>> master
         </state>
@@ -573,6 +587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/titleScreen.fxml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -590,6 +605,10 @@
         <state relative-caret-position="216">
           <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
 >>>>>>> master
+=======
+        <state relative-caret-position="291">
+          <caret line="24" column="112" lean-forward="true" selection-start-line="24" selection-start-column="112" selection-end-line="24" selection-end-column="112" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
