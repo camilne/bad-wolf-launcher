@@ -27,15 +27,13 @@ public class TitleScreenController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         File folder = new File("resources/avatars");
-        File[] listOfFiles = folder.listFiles();
+        File[] listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
 
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
                 avatars.add(new Image(listOfFiles[i].toURI().toString(),200,200,true,true));
             }
         }
-
-        //TODO: fix buttons and replace repo and fix colors
 
         imageViewer.setImage(avatars.get(0));
     }
