@@ -28,7 +28,7 @@ public class TitleScreenController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         File folder = new File("avatars");
-        File[] listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
+        listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
         if(listOfFiles == null)
             return;
 
@@ -69,7 +69,8 @@ public class TitleScreenController implements Initializable{
         {
             StringBuilder builder = new StringBuilder(
                     "java -jar bad-wolf.jar");
-            Runtime.getRuntime().exec(builder.toString());
+            System.out.println(listOfFiles[index].toString());
+            Runtime.getRuntime().exec(builder.toString() + " " + listOfFiles[index].toString());
             System.exit(0);
         } catch (Exception e)
         {
