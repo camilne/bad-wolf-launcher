@@ -9,23 +9,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F4F1DE;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TitleScreen.TitleScreenController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #39393A;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TitleScreen.TitleScreenController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" spacing="60.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #13262F;" text="Game Name" wrappingWidth="146.13671875">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: D1CFCF;" text="Obscurité" textAlignment="CENTER" wrappingWidth="243.13671875">
                <font>
-                  <Font size="25.0" />
+                  <Font name="Eater" size="36.0" />
                </font>
             </Text>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#cycleCharLeft" style="-fx-background-color: #9DA9A0;" text="&lt;" />
+                  <Button mnemonicParsing="false" onAction="#cycleCharLeft" style="-fx-background-color: D1CFCF;" text="&lt;" textFill="#39393a" />
                   <ImageView fx:id="imageViewer" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button mnemonicParsing="false" onAction="#cycleCharRight" style="-fx-background-color: #9DA9A0;" text="&gt;" />
+                  <Button mnemonicParsing="false" onAction="#cycleCharRight" style="-fx-background-color: D1CFCF;" text="&gt;" textFill="#39393a" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" onAction="#launchGame" style="-fx-background-color: #9DA9A0;" text="Play" />
+            <Button mnemonicParsing="false" style="-fx-background-color: D1CFCF;" text="Play" textFill="#39393a" />
          </children>
          <padding>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
