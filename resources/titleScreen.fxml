@@ -14,7 +14,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #39393A;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TitleScreen.TitleScreenController">
    <children>
       <MediaView fx:id="videoPlayer" fitHeight="500.0" fitWidth="600.0" />
-      <VBox alignment="TOP_CENTER" prefHeight="439.0" prefWidth="600.0" spacing="60.0">
+      <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="439.0" prefWidth="600.0" spacing="60.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: D1CFCF;" text="Obscurité" textAlignment="CENTER" wrappingWidth="243.13671875">
                <font>

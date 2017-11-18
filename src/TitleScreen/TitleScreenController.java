@@ -6,6 +6,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
@@ -25,6 +27,8 @@ import java.util.ResourceBundle;
  */
 public class TitleScreenController implements Initializable{
     @FXML
+    VBox vbox;
+    @FXML
     private ImageView imageViewer;
     @FXML
     ComboBox<String> screenSizeOptions;
@@ -32,7 +36,7 @@ public class TitleScreenController implements Initializable{
     private File video = new File("story.mp4");
 
     @FXML
-    private MediaView videoPlayer = new MediaView(new MediaPlayer(new Media(video.toURI().toString())));
+    private MediaView videoPlayer;
 
     private File[] listOfFiles;
     private ArrayList<Image> avatars = new ArrayList<>();
@@ -40,6 +44,8 @@ public class TitleScreenController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        videoPlayer.setMediaPlayer(new MediaPlayer(new Media(video.toURI().toString())));
+        videoPlayer.setVisible(false);
         screenSizeOptions.setItems(FXCollections.observableArrayList("Full Screen", "Medium"));
         screenSizeOptions.getSelectionModel().selectFirst();
         File folder = new File("avatars");
@@ -80,20 +86,14 @@ public class TitleScreenController implements Initializable{
 
     @FXML
     public void launchGame() {
-        System.out.println("launching");
-        System.out.println(video.toURI().toString());
-
-        videoPlayer.getMediaPlayer().setOnReady(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("running video");
-                videoPlayer.getMediaPlayer().play();
-        }
-        });
+        vbox.getChildren().clear();
+        videoPlayer.setVisible(true);
+        videoPlayer.setY(50);
+        videoPlayer.setPreserveRatio(true);
+        videoPlayer.getMediaPlayer().play();
         videoPlayer.getMediaPlayer().setOnEndOfMedia(new Runnable() {
             @Override
             public void run() {
-                System.out.println("video finished");
                 try {
                     StringBuilder builder = new StringBuilder(
                             "java -jar bad-wolf.jar");
