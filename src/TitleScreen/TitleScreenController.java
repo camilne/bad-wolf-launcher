@@ -1,10 +1,13 @@
 package TitleScreen;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.awt.*;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
@@ -20,6 +23,8 @@ import java.util.ResourceBundle;
 public class TitleScreenController implements Initializable{
     @FXML
     private ImageView imageViewer;
+    @FXML
+    ComboBox<String> screenSizeOptions;
 
     private File[] listOfFiles;
     private ArrayList<Image> avatars = new ArrayList<>();
@@ -27,6 +32,8 @@ public class TitleScreenController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        screenSizeOptions.setItems(FXCollections.observableArrayList("Full Screen", "Medium"));
+        screenSizeOptions.getSelectionModel().selectFirst();
         File folder = new File("avatars");
         listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
         if(listOfFiles == null)
@@ -69,8 +76,14 @@ public class TitleScreenController implements Initializable{
         {
             StringBuilder builder = new StringBuilder(
                     "java -jar bad-wolf.jar");
-            System.out.println(builder.toString() + " " + listOfFiles[index].toString());
-            Runtime.getRuntime().exec(builder.toString() + " " + listOfFiles[index].toString());
+            StringBuilder size = new StringBuilder();
+            if (screenSizeOptions.getValue().equals("Full Screen")) {
+                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                size.append((int)screenSize.getWidth() + " " + (int)screenSize.getHeight() + " " + "false");
+            } else  {
+                size.append("1280 720 false");
+            }
+            Runtime.getRuntime().exec(builder.toString() + " " + listOfFiles[index].toString() + " " + size);
             System.exit(0);
         } catch (Exception e)
         {
