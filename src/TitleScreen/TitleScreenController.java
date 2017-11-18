@@ -27,12 +27,14 @@ public class TitleScreenController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        File folder = new File("resources/avatars");
-        listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
+        File[] listOfFiles = folder.listFiles((dir, name) -> !name.equals(".DS_Store"));
+        File folder = new File("avatars");
+        if(listOfFiles == null)
+            return;
 
-        for (int i = 0; i < listOfFiles.length; i++) {
-            if (listOfFiles[i].isFile()) {
-                avatars.add(new Image(listOfFiles[i].toURI().toString(),200,200,true,true));
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                avatars.add(new Image(file.toURI().toString(), 200, 200, true, true));
             }
         }
 
